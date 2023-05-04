@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{background-color: #000000;}
+.navbar{
+    background-color: #000000;
+}
+main{width: 100%;
+height: 90vh;
+background-color: #363230;
+}
+.logo{
+    color: #e08700 !important;
+}
+.navbar-brand{font-size: 20px;
+font-weight: bold;
+}
+
+.nav-link:hover{
+    text-shadow: 0 0 5px #e08700, 0 0 5px #e08700;
+}
+.jumbotron{
+    background-image: linear-gradient(rgba(255, 123, 0, 0.5),rgba(0, 0, 0, 0.5)), url(img/sofia-barrios-2.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    width: 100%;
+    height: 900px;
+    color: #ffffff;
+    font-size: 40px;
+    text-shadow: 0 0 5px #000000;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 0;
+    border-radius: 0;
+}
+.jumbotron p{
+    font-size: 25px;
+}
+footer{
+    text-align: center;
+    background-color: #000000;
+    padding: 20px;
+    margin-top: 10px;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+footer h3{
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #e08700;
+    
+}
+.redes a{
+    letter-spacing: 20px;
+    font-size: 30px;
+    color: #ffffff;
+    justify-items: center;
+}
+.redes a:hover{
+color: #e08700;
+}
+.slide img{
+    height: 90vh;
+}
+.slide h5{
+    font-weight: bold;
+    color: #e08700;
+    text-shadow: 0 0 5px #000000;
+    font-size: 30px;
+}
+
+.carousel-indicators, .carousel-control-next-icon, .carousel-control-prev-icon{
+    background-color: #000000;
+    text-shadow: 0 0 5px #000000;
+    border-radius: 5px;
+}
+.carousel-indicators{margin-top: 0;
+border-radius: 0;}
+.caruselTexto{
+    background-color: #000000;
+    margin: 0;
+    padding: 0;
+}
+.card{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 80%;
+    grid-template-rows: 100px 70px 600px 100px;
+    grid-template-areas: 
+    "header"
+    "texto1"
+    "videoVG"
+    "texto2";
+    background-color: #363230;
+    justify-content: center;
+    text-align: center;
+    color: #e08700;
+    row-gap: 0;
+}
+.texto1{
+    grid-area: texto1;
+    font-size: 20px;
+    border: 1px solid #e08700;
+    border-top: none;
+    margin-top: 0;
+    background-color: #000000;
+    padding-top: 5px;
+    border-radius: 10px;
+}
+.texto2{
+    grid-area: texto2;
+    font-size: 25px;
+    padding-top: 5px;
+    margin-bottom: 10px;
+}
+.videoVG{
+    grid-area: videoVG;
+    width: 100%;
+    height:600px;
+}
+.header{
+    grid-area: header;
+    font-size: 40px;
+    border: 1px solid #e08700;
+    border-bottom: none;
+    margin-bottom: 0;
+    margin-top: 20px;
+    background-color: #000000;
+    padding: 20px;
+    border-radius: 10px;
+}
+.boton{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.textocontacto{
+    width: 80%;
+    background-color: #000000;
+    border: 1px solid #e08700;
+    border-radius: 10px;
+    padding: 4px;
+}
+.fa-user{
+    color:#ffffff
+}
+.fa-user:hover{
+    color: #e08700;
+    transition: all .3s ease-in-out;
+}
+
+.formularioContacto{
+    background-color: rgb(0, 0, 0);
+    width: 500px;
+margin: 0 auto;
+position: relative;
+top: 16%;
+border-radius: 10px;
+}
+.headerContacto{
+    width: 100%;
+    display: block;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 100px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+.contacto{
+    padding: 12px;
+    overflow: hidden;
+    color: #363230;
+}
+.contacto input:not([type='submit']), .contacto textarea{
+    border: none;
+    border-bottom: 1px solid #363230;
+    outline: none;
+    font-size: 20px;
+    margin-bottom: 10px;
+    background-color: #363230;
+    color: #ffffff;
+}
+.contacto label, .contacto input, .contacto textarea{
+    display: block;
+    width: 100%;
+}
+.contacto textarea{ min-height: 100px;}
+.enviar{
+    padding: 10px;
+    font-size: 20px;
+    background-color: #000000;
+    border: none;
+    color: #e08700;
+}
+.contacto label{
+    color: #e08700;
+}
+.contacto input:hover, .contacto textarea:hover{
+    background-color: #e08700;
+    transition: all .3s ease-in-out;
+}
